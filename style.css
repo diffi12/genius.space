@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
