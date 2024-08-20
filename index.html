@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -37,7 +37,7 @@
               </li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
       </div>
     </header>
@@ -88,28 +88,35 @@
       <section class="section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Наші найкращі <span class="accent">шеф-кухарі</span>
+            Наші найкращі <br>
+            <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img class="chef-photo" src="./img/nastia-chef.jpg" alt="nastia chef">
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                <p>Вже 10 років, я втілюю <br> у життя цікаві та смачні ідеї.</p>
+                <p>Я випічу для вас <br> найсмачніщі вироби!</p>
+                  </div>
+                </div>
               </article>
             </li>
             <li>
-              <article>
+              <article class="chef-card">
                 <img class="chef-photo" src="./img/vlad-chef.jpg" alt="vlad chef">
-                <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                <p class="chef-text">Привіт, я Влад!</p>
+                <p class="chef-text">
                   Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
                   любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
                 </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -118,6 +125,12 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg>
+          </button>
           <ul class="format-list"> 
             <li class="formats-item">
               <article class="format-card">
@@ -162,15 +175,25 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button next" type="button">
+            <svg width="16" height="16">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg>
+          </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section title">
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
             Приєднуйся до мережі пекарень
           </h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            </div>
           <iframe
+            class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576982!2d30.488658576961026!3d50.456673086915146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1704721117760!5m2!1suk!2sua"
             width="603"
             height="595"
@@ -179,24 +202,28 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
+        <div class="footer-container">
+          <nav class="footer-nav">
+          <div class="footer-logo">
+            <a class="footer-logo" href="#">
             <img src="./img/logo.svg" alt="логотип" />
           </a>
-          <ul>
+          </div>
+          <ul class="footer-menu">
             <li><a class="link" href="#">Наші традиції</a></li>
             <li><a class="link" href="#">Шеф-кухарі</a></li>
             <li><a class="link" href="#">Формати</a></li>
             <li><a class="link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <address>
-          <ul>
+        <address class="footer-address">
+          <ul class="address-list">
             <li>
               <a class="address-link" href="tel:+380960000007"
                 >+ 38 (096) 000 00 07</a
@@ -218,19 +245,32 @@
             </li>
             <li>
               <a href="#"></a>
-              <!-- facebook -->
+              <svg class="address-icon" width="32" height="32">
+                <use href="img/icons.svg#icon-facebook"></use>
+              </svg>
             </li>
             <li>
               <a href="#"></a>
-              <!-- instagram -->
+              <svg class="address-icon" width="32" height="32">
+                <use href="img/icons.svg#icon-instagram"></use>
+              </svg>
             </li>
           </ul>
-          <a class="address-link" href="#" target="_blank"
+          <div class="address-info">
+             <a class="address-link" href="#" target="_blank"
             >Політика конфіденційності</a
           >
-          <p class="address-copyright">&copy; 2022 Дані захищені</p>
+          <p class="address-copyright">&copy; 2022 Дані захищені</p>  
+          </div>
         </address>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
