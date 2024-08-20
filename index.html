@@ -2,7 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Сучасна пекарня</title>
     <!-- Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     /> -->
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <header class="header">
@@ -20,7 +20,7 @@
         <div class="header-container">
           <nav class="header-nav">
             <a href="/">
-              <img src="./img/logo.svg" alt="логотип" />
+              <img src="./img/logo.svg" alt="логотип"/>
             </a>
             <ul class="header-menu">
               <li>
@@ -191,6 +191,26 @@
             Приєднуйся до мережі пекарень
           </h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <form name="modal-form" autocomplete="off">
+          
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"></label>
+          <input class="form-input" id="user-name" name="user-name" placeholder="Ім’я" type="text">
+          </div>
+          
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"></label>
+          <input class="form-input" id="user-tel" name="user-tel" placeholder="Телефон" type="tel">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"></label>
+          <input class="form-input" id="user-email" name="user-email" placeholder="Електронна пошта" type="email">
+          </div>
+
+          <button class="button form-button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>
+        </form>
             </div>
           <iframe
             class="contact-map"
@@ -269,6 +289,28 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"></label>
+          <input class="form-input" id="user-name" name="user-name" placeholder="Ім’я" type="text">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"></label>
+          <input class="form-input" id="user-tel" name="user-tel" placeholder="Телефон" type="tel">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"></label>
+          <input class="form-input" id="user-email" name="user-email" placeholder="Електронна пошта" type="email">
+          </div>
+
+          <button class="button form-button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>

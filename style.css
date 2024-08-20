@@ -512,12 +512,68 @@ ul {
   height: 100%;
   max-width: 880px;
   max-width: 880px;
+  padding: 128px;
   background-color: var(--color-primery-light);
   border-radius: 32px;
+  overflow: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* form */
+
+.form-field{
+  margin-bottom: 32px;
+}
+
+.form-label{
+  display: block;
+  top: 16px;
+  left: 42px;
+}
+
+.form-input{
+  padding: 16px 42px;
+  width: 100%;
+    font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:hover{
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-dark);
+}
+
+.form-input:focus::placeholder{
+ color: var(--color-primery-dark); 
+}
+
+.form-button{
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms{
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link{
+  color: var(--color-primery-dark);
+  text-underline-offset: 3px;
 }
