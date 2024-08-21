@@ -131,7 +131,7 @@ ul {
 
 /* Header */
 
-.header{
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,12 +164,12 @@ ul {
 .hero-section {
   padding: 272px 0;
   background-image: linear-gradient(
-    102.76deg,
-    rgba(18,18,17,0.78) 2.03%,
-    rgba(18,18,17,0.6) 58.46%,
-    rgba(18,18,17,0) 90.36%
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
     ),
-     url('img/Hero-section-background.jpg');
+    url('img/Hero-section-background.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -342,7 +342,7 @@ ul {
   transition: transform 0.3s;
 }
 
-.format-card:hover{
+.format-card:hover {
   transform: scale(1.05);
 }
 
@@ -382,7 +382,7 @@ ul {
   fill: var(--color-primery-light);
 }
 
-.carousel-button.next{
+.carousel-button.next {
   transform: rotate(180deg);
 }
 
@@ -486,6 +486,8 @@ ul {
   font-size: 14px;
 }
 
+/* modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -514,8 +516,21 @@ ul {
   max-width: 880px;
   padding: 128px;
   background-color: var(--color-primery-light);
-  border-radius: 32px;
+  border-radius: 32px 0 0 32px;
   overflow: auto;
+}
+
+.modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #c69f8c;
 }
 
 .modal-btn-close {
@@ -526,27 +541,27 @@ ul {
 
 /* form */
 
-.form-field{
+.form-field {
   margin-bottom: 32px;
 }
 
-.form-label{
+.form-label {
   display: block;
   top: 16px;
   left: 42px;
 }
 
-.form-input{
+.form-input {
   padding: 16px 42px;
   width: 100%;
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.17;
   border: 1px solid var(--color-secondary-dark);
   border-radius: 8px;
   background-color: transparent;
 }
 
-.form-input:hover{
+.form-input:hover {
   border-color: var(--color-brand-normal);
   outline: none;
 }
@@ -555,16 +570,16 @@ ul {
   color: var(--color-secondary-dark);
 }
 
-.form-input:focus::placeholder{
- color: var(--color-primery-dark); 
+.form-input:focus::placeholder {
+  color: var(--color-primery-dark);
 }
 
-.form-button{
+.form-button {
   display: block;
   margin: 0 auto 24px;
 }
 
-.form-terms{
+.form-terms {
   margin: 0 auto;
   max-width: 220px;
   font-weight: 500;
@@ -573,7 +588,7 @@ ul {
   text-align: center;
 }
 
-.form-terms-link{
+.form-terms-link {
   color: var(--color-primery-dark);
   text-underline-offset: 3px;
 }
